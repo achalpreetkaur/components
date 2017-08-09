@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC"-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/set.css" />
+    <title>The Awesome HTML5 / CSS Catalogue</title>
+    <script language="javascript">
+        //INSERT INLINE SCRIPTS HERE
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"><span><img src="images/logo.png" alt="Catalog Logo" style="height:150%;">Awesome Element Catalogue<sup>BETA</sup></a></span>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="main.html">Text Box</a></li>
+                    <li><a class="active" href="buttons.html">Buttons</a></li>
+                </ul>
+                <span class="nav text-primary navbar-right navbar-text m-2" />One stop for all your designing needs
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <!--------- Text Box Sample 1--------->
+        <div class="row content txt_box1">
+            <section class="content col-sm-6">
+                <h2 class="nomargin-bottom row ">Sample Button 1</h2>
+                
+                <div id="main">
+                   <a rel="nofollow" rel="noreferrer" href="#" class="btn btn-sm animated-button victoria-two">Login</a>
+                    <div class="div_btn">
+                        <button type="button" class="btn btn-primary" id="btn_showcode" onclick="show_code();">Show Code</button>
+                        <button type="button" class="btn btn-primary" id="btn_hidecode" onclick="hide_code();">Hide Code</button>
+                    </div>
+                    <!--div_btn-->
+                </div>
+            </section>
+            
+            <section id="element_desc" class="border-corners content col-sm-6">
+                <div class="card-block">
+                    This is an animated button that changes its colors when hovered upon. This is based entirely on HTML5 and CSS. No JS/JQuery is being used.
+                </div>
+
+            </section>
+            <section id="element_desc2" class="border-corners content col-sm-6">
+                <div class="card-block">
+                    <h4>HTML</h4>
+                    <code id="codearea">
+                        &lt;a rel="nofollow" rel="noreferrer" href="#" class="btn btn-sm animated-button victoria-two"&gt;Login&lt;/a&gt;
+                    </code>
+                    <h4>CSS</h4>
+                    <code id="codearea">
+                    a.animated-button:link, a.animated-button:visited {
+                        position: relative;
+                        display: block;
+                        margin: 30px auto 0;
+                        padding: 14px 15px;
+                        color: #fff;
+                        font-size:14px;
+                        font-weight: bold;
+                        text-align: center;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        overflow: hidden;
+                        letter-spacing: .08em;
+                        border-radius: 0;
+                        text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+                        -webkit-transition: all 1s ease;
+                        -moz-transition: all 1s ease;
+                        -o-transition: all 1s ease;
+                        transition: all 1s ease;
+                    }
+                    a.animated-button:link:after, a.animated-button:visited:after {
+                        content: "";
+                        position: absolute;
+                        height: 0%;
+                        left: 50%;
+                        top: 50%;
+                        width: 150%;
+                        z-index: -1;
+                        -webkit-transition: all 0.75s ease 0s;
+                        -moz-transition: all 0.75s ease 0s;
+                        -o-transition: all 0.75s ease 0s;
+                        transition: all 0.75s ease 0s;
+                    }
+                    a.animated-button:link:hover, a.animated-button:visited:hover {
+                        color: #FFF;
+                        text-shadow: none;
+                    }
+                    a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+                        height: 450%;
+                    }
+                    a.animated-button:link, a.animated-button:visited {
+                        position: relative;
+                        display: block;
+                        margin: 30px auto 0;
+                        padding: 14px 15px;
+                        color: #fff;
+                        font-size:14px;
+                        border-radius: 0;
+                        font-weight: bold;
+                        text-align: center;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        overflow: hidden;
+                        letter-spacing: .08em;
+                        text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+                        -webkit-transition: all 1s ease;
+                        -moz-transition: all 1s ease;
+                        -o-transition: all 1s ease;
+                        transition: all 1s ease;
+                    }
+
+                    a.animated-button.victoria-two {
+                        border: 2px solid #D24D57;
+                    }
+                    a.animated-button.victoria-two:after {
+                        background: #D24D57;
+                        -moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+                        -ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+                        -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+                        transform: translateX(-50%) translateY(-50%) rotate(25deg);
+                    }
+
+                    </code>
+                </div>
+
+            </section>
+        </div>
+    </div>
+    <!--------- Text Box Sample 2--------->
+    <footer class="footer myfooter bg-error">
+        <div class="container">
+            <p class="text-muted" style="margin-top:3vh;">This is a demo version for the soon to be deployed HTML/CSS helper.</p>
+            <p class="text-muted"><a href="mailto:Noida6EliLilly UI grp">Write to us </a>in case of help/suggestion/feedback.</p>
+        </div>
+    </footer>
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
+</body>
+
+</html>
